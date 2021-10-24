@@ -1,0 +1,177 @@
+@import 'nullstyle.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* === VARIABLES === */
+$base: 4px;
+
+$transition: .2;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$padding-vertical: $base * 30;
+/* === / VARIABLES === */
+
+/* === COMMON === */
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.section-outer{}
+
+.section-inner{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: $padding-vertical;
+    padding-bottom: $padding-vertical;
+}
+
+.btn{
+    font-size: 14px;
+    color: #000;
+    border-radius: $base * 12;
+
+    &--grey{
+        background-color: #ebebeb;
+        padding: $base*4 $base*7;
+    }
+}
+/* ===  / COMMON === */
+
+/* === HEADER === */
+.section-header{
+    .section-inner{
+        display: flex;
+        align-items: center;
+        padding-top: $base * 2;
+        padding-bottom: $base * 2;
+    }
+
+    .logo{
+        margin-right: $base * 20;
+    }
+
+    .btn-wrapper{
+        margin-left: auto;
+        margin-right: $base*8;
+    }
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: $fw-bold;
+    line-height: $base * 5;
+
+    img{
+        margin-right: $base;
+    }
+}
+
+.search{
+    position: relative;
+
+    &-btn{
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: $base*4;
+    }
+
+    &-input{
+        background-color: rgba(#eee, .7);
+        border-radius: $base * 2;
+        width: 620px;
+        height: 50px;
+        padding: $base*4 0 $base*4 $base*5;
+
+        &::placeholder{
+            font-weight: $fw-regular;
+            font-size: 16px;
+            line-height: $base * 6;
+            color: #57565b;
+            transition: $transition;
+        }
+
+        &:focus::placeholder{
+            color: transparent;
+        }
+    }
+}
+
+.shopping-cart{
+    position: relative;
+
+    &-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f66a15;
+        border-radius: 100%;
+        width: $base*12;
+        height: $base*12;
+
+    }
+
+    &-counter{
+        padding: $base;
+        background-color: #ffaf19;
+        border-radius: 100%;
+        position: absolute;
+        font-weight: $fw-regular;
+        font-size: 8px;
+        color: #000;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.shopping-counter{
+    
+}
+/* === / HEADER === */
+
+/* === INTRO === */
+.section-intro{
+
+}
+/* === / INTRO === */
+
+/* === DELIVERY === */
+.section-delivery{
+
+}
+/* === / DELIVERY === */
+
+/* === FOOD-CATEGORIES === */
+.section-food-categories{
+    background-color: #f6f6f6;
+}
+/* === / FOOD-CATEGORIES === */
+
+/* === BENEFITS === */
+.section-benefits{
+
+}
+/* === / BENEFITS === */
+
+/* === FOOTER === */
+.section-footer{
+    background-color: #f6f6f6;
+
+    .section-inner{
+        padding-top: $base * 4;
+        padding-bottom: $base * 4;
+    }
+}
+/* === / FOOTER === */
